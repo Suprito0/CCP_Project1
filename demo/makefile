@@ -3,5 +3,5 @@ run:
 
 git:
 	git add .
-	git commit -m "changed some stuff"
+	git commit -m "updated the index.html"
 	git push
