@@ -3,5 +3,5 @@ run:
 
 git:
 	git add .
-	git commit -m "made update to script.js to save recorded file"
+	git commit -m "made some updates with the script.js and TranscriptionController.java"
 	git push
