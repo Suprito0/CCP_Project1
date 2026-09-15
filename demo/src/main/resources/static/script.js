@@ -24,6 +24,15 @@ recordingButton.addEventListener('click', async () =>{
             audioChunks.push(event.data);
         });
 
+        mediaRecorder.addEventListener("stop", async () => {
+
+            const audioBlob = new Blob(audioChunks, {
+                type: "audio/webm"
+            });
+
+            console.log(audioBlob);
+        });
+
         mediaRecorder.start();
 
         recordingButton.style.color = "red";

@@ -3,5 +3,5 @@ run:
 
 git:
 	git add .
-	git commit -m "make a script.js to record audio"
+	git commit -m "made update to script.js to save recorded file"
 	git push
