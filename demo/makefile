@@ -3,5 +3,5 @@ run:
 
 git:
 	git add .
-	git commit -m "added and updated style.css"
+	git commit -m "make a script.js to record audio"
 	git push

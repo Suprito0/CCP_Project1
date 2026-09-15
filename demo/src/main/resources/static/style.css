@@ -6,4 +6,9 @@ body{
 button{
     padding: 10px;
     margin: 10px;
+    color:green;
+}
+
+#status{
+    color: green;
 }
