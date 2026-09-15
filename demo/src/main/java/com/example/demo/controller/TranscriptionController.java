@@ -8,7 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class TranscriptionController {
 
-    @PostMapping("/api/v1/transcribe")
+    @PostMapping("/transcribe")
     public String transcribe(
             @RequestParam("audio") MultipartFile audioFile) {
 
