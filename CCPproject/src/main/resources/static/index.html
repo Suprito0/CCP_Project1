@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="page-title">
+      <header>
+        <p class="eyebrow">Cloud Speech-to-Text</p>
+        <h1 id="page-title">Speech to Text</h1>
+        <p class="intro">
+          Record up to 55 seconds of speech and receive a transcription.
+        </p>
+      </header>
+
+      <section class="recorder" aria-labelledby="recorder-heading">
+        <h2 id="recorder-heading" class="sr-only">Audio recorder</h2>
+
+        <button id="recordingButton" type="button" aria-pressed="false">
+          Start Recording
+        </button>
+
+        <div class="status-row">
+          <span
+            id="recordingIndicator"
+            class="indicator"
+            aria-hidden="true"
+          ></span>
+          <p id="status" role="status" aria-live="polite">Ready</p>
+        </div>
+
+        <p id="timer" class="timer" aria-live="off">00:00</p>
+      </section>
+
+      <section class="result" aria-labelledby="transcript-heading">
+        <h2 id="transcript-heading">Transcript</h2>
+        <p id="transcription" aria-live="polite">No transcription yet.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
